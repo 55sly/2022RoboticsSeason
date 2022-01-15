@@ -28,6 +28,7 @@ public void robotInit(){
   RobotMap.init();
   drivetrain = new Drivetrain();
   JoystickController.Init();
+  intake = new Intake();
   SmartDashboard.putData("Auto mode", m_chooser);
   String trajectoryJSON = "paths/start1.wpilib.json";
   Trajectory trajectory = new Trajectory();
